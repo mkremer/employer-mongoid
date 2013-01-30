@@ -1,7 +1,9 @@
 *.gem
 *.rbc
+.apt-cache
 .bundle
 .config
+.vagrant
 .yardoc
 Gemfile.lock
 InstalledFiles
