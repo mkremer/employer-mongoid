@@ -11,16 +11,9 @@ module Employer
       end
 
       def dequeue
-        job = Employer::Mongoid::Job.
-          free.
-          asc(:created_at).
-          find_and_modify({"$set" => {state: :locked}}, new: true)
-
-        {
-          id: job.id,
-          class: job.type,
-          attributes: job.properties,
-        }
+        if job = Employer::Mongoid::Job.free.asc(:created_at).find_and_modify({"$set" => {state: :locked}}, new: true)
+          {id: job.id, class: job.type, attributes: job.properties}
+        end
       end
 
       def complete(job)
