@@ -1,0 +1,16 @@
+development:
+  sessions:
+    default:
+      database: employer
+      hosts:
+        - localhost:27017
+  options:
+    allow_dynamic_fields: false
+test:
+  sessions:
+    default:
+      database: employer
+      hosts:
+        - localhost:27017
+  options:
+    allow_dynamic_fields: false
