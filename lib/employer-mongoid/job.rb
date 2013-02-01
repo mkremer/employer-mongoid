@@ -7,7 +7,7 @@ module Employer
       include ::Mongoid::Timestamps
       store_in collection: "employer_jobs"
 
-      field :state, type: Symbol
+      field :state, type: Symbol, default: :free
       field :type, type: String
       field :properties, type: Hash, default: {}
 
