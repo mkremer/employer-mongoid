@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Ensure that your Employer configuration starts with something like the below:
+
+```ruby
+require "./config/environment.rb"
+require "employer-mongoid"
+
+pipeline_backend Employer::Mongoid::Pipeline.new
+```
+
+If you're not using Rails then require whatever sets up your application's
+environment instead of config/environment.rb before requiring employer-mongoid. 
 
 ## Contributing
 
