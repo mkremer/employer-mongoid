@@ -16,6 +16,10 @@ module Employer
         end
       end
 
+      def clear
+        Employer::Mongoid::Job.destroy_all
+      end
+
       def complete(job)
         Employer::Mongoid::Job.find(job.id).destroy
       end

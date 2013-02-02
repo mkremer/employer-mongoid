@@ -30,6 +30,13 @@ describe Employer::Mongoid::Pipeline do
     end
   end
 
+  describe "clear" do
+    it "deletes all jobs" do
+      Employer::Mongoid::Job.should_receive(:destroy_all)
+      pipeline.clear
+    end
+  end
+
   describe "#complete" do
     it "deletes the job from the collection" do
       job_document = double("Job document")
