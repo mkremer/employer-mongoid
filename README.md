@@ -1,4 +1,4 @@
-# Employer::Mongoid
+# Employer::Mongoid [![Build Status](https://travis-ci.org/mkremer/employer-mongoid.png)](https://travis-ci.org/mkremer/employer-mongoid)
 
 Mongoid backend for Employer
 
