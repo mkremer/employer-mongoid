@@ -1,5 +1,7 @@
 # Employer::Mongoid [![Build Status](https://travis-ci.org/mkremer/employer-mongoid.png)](https://travis-ci.org/mkremer/employer-mongoid)
 
+NOTE: This code is still experimental
+
 Mongoid backend for Employer
 
 ## Installation
